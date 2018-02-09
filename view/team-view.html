@@ -1,0 +1,105 @@
+<section class="appSection">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="allDataTable table-responsive text-center ">
+                    <h1 style="color: #b24b1c; font-family: monospace;"> <strong><span ng-show="teamDetails.teamname1">{{teamDetails.teamname1}}</span></strong> Team Statistics</h1>
+                    <table class="table table-bordered table-hover ">
+                        <thead >
+                            <tr style="color: #f47a42;" >
+                                <th class="text-center"> Stats </th>
+                                <th class="text-center">
+                                    Details of 2015 / 2016
+                                </th>
+                                <th class="text-center">
+                                    Details of 2016 / 2017
+                                </th>
+                                <th class="text-center">
+                                    Total Details of 2015 / 2016 / 2017
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="color: #f47a42;" class="text-center">
+                                    Matches Played
+                                </td>
+                                <td>
+                                    {{teamDetails.totalMatchesPlayed1.length}}
+                                </td>
+                                <td>
+                                    {{teamDetails.totalMatchesPlayed2.length}}
+                                </td>
+                                <td>
+                                    {{teamDetails.totalMatchesPlayed}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color: #f47a42;" class="text-center">
+                                    Won Matches
+                                </td>
+                                <td>
+                                    {{teamDetails.totalWins1.length}}
+                                </td>
+                                <td>
+                                    {{teamDetails.totalWins2.length}}
+                                </td>
+                                <td>
+                                    {{teamDetails.totalWins}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color: #f47a42;" class="text-center">
+                                    Lost Matches
+                                </td>
+                                <td>
+                                    {{teamDetails.totalLost1.length}}
+                                </td>
+                                <td>
+                                    {{teamDetails.totalLost2.length}}
+                                </td>
+                                <td>
+                                    {{teamDetails.totalLost}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color: #f47a42;" class="text-center">
+                                    Tied Matches
+                                </td>
+                                <td>
+                                    {{teamDetails.totaltie1.length}}
+                                </td>
+                                <td>
+                                    {{teamDetails.totaltie2.length}}
+                                </td>
+                                <td>
+                                    {{teamDetails.totaltie}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color: #f47a42;" class="text-center">
+                                    Goals Scored
+                                </td>
+                                <td>
+                                    {{teamDetails.totalgoals1}}
+                                </td>
+                                <td>
+                                    {{teamDetails.totalgoals2}}
+                                </td>
+                                <td>
+                                    {{teamDetails.totalgoals}}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#/" class="btn btn-primary btn-primary"><span class="glyphicon glyphicon-home"> </span>  Go To Homepage </a> 
+                    </br></br>
+                </div>
+                <!--  allDatatable end -->
+                <div>
+                    <!-- col end -->
+                </div>
+                <!--  row end -->
+            </div>
+            <!-- conteiner-fluid end -->
+</section>

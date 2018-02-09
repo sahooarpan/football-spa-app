@@ -1,0 +1,90 @@
+<section class="appSection">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="allDataTable table-responsive text-center"></br>
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th colspan="3" class="text-center" style="color: #f47a42;">
+                                    {{matchDetails.teamName1}}  <strong><u>V/S</u></strong> {{matchDetails.teamName2}}
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-left">
+                                    <span style="color: #f47a42;">Round Name:</span> {{matchDetails.roundName}} 
+                                </td>
+                                <td colspan="2" class="text-left">
+                                   <span style="color: #f47a42;"> Match Date:</span> {{matchDetails.matchDate | date: "fullDate"}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color: #f47a42;">
+                                    Team Names:
+                                </td>
+                                <td>
+                                    <a ng-href="#/team-view/{{matchDetails.teamCode1}}/{{ matchDetails.teamKey1 }}" title="View Team Statistics">{{matchDetails.teamName1}}</a>
+                                </td>
+                                <td>
+                                    <a ng-href="#/team-view/{{matchDetails.teamCode2}}/{{ matchDetails.teamKey2 }}" title="View Team Statistics">{{matchDetails.teamName2}}</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color: #f47a42;">
+                                    Team Keys:
+                                </td>
+                                <td>
+                                    {{matchDetails.teamKey1}}
+                                </td>
+                                <td>
+                                    {{matchDetails.teamKey2}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color: #f47a42;">
+                                    Team Codes:
+                                </td>
+                                <td>
+                                    {{matchDetails.teamCode1}}
+                                </td>
+                                <td>
+                                    {{matchDetails.teamCode2}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color: #f47a42;">
+                                    Team Scores:
+                                </td>
+                                <td>
+                                    <span>{{matchDetails.teamScore1}}</span><span ng-show="matchDetails.teamScore1 === null">"Not Available Yet"</span>
+                                </td>
+                                <td>
+                                    <span>{{matchDetails.teamScore2}}</span><span ng-show="matchDetails.teamScore2 === null">"Not Available Yet"</span>
+                                </td>
+                            </tr>
+                             <tr>
+                                <td style="color: #f47a42;">
+                                    Winner Team name:
+                                </td>
+                                <td colspan="2">
+                                {{matchDetails.matchWinner}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <a href="#/" class="btn btn-primary btn-primary"><span class="glyphicon glyphicon-home"></span> Go To Homepage</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- table div end -->
+            </div>
+            <!-- col end -->
+        </div>
+        <!--  row end -->
+    </div>
+    <!-- conteiner-fluid end -->
+</section>
